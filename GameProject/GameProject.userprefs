@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\common\Constant.cs">
+    <Files>
+      <File FileName="Assets\script\Control\PlayerControl.cs" Line="34" Column="25" />
+      <File FileName="Assets\script\common\Constant.cs" Line="10" Column="44" />
+      <File FileName="Assets\script\Control\FieldControl.cs" Line="35" Column="26" />
+      <File FileName="Assets\script\control\CameraControl.cs" Line="12" Column="24" />
+      <File FileName="Assets\script\control\TouchControl.cs" Line="46" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
