@@ -8,6 +8,7 @@ public class Constant
 	//====================
 	// MigrationVelocity
 	public const float RateCoefficient = 0.1f;
+	public const float Accelerate = 0.3f;
 
 	//====================
 	// FieldParmeter

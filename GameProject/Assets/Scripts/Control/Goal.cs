@@ -6,6 +6,7 @@ public class Goal : MonoBehaviour
 	//====================
 	// PrivateMember
 	//====================
+	private bool _goalFlag = false;
 	private int _goalCounter = 0;
 
 	//====================
@@ -24,16 +25,22 @@ public class Goal : MonoBehaviour
 	void Update ()
 	{
 		// ここ途中!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//		if(  == true)
-		_goalCounter++;
+		if (_goalFlag == true)
+		{
+			_goalCounter++;
+		}
+
 		if (_goalCounter > 10)
 		{
 			_goalCounter = 0;
+			_goalFlag = false;
 			Application.LoadLevel("result");
 		}
 	}
 
 	void OnCollisionEnter()
 	{
+		Debug.Log ("Goal");
+		_goalFlag = true;
 	}
 }

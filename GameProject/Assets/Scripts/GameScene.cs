@@ -24,7 +24,14 @@ public class GameScene : MonoBehaviour
 	void Update ()
 	{
 	}
-	
+
+
+	void OnCollisionEnter()
+	{
+		Debug.Log ("GameOver");
+		Application.LoadLevel("result");
+	}
+
 	//====================
 	// Property
 	//====================

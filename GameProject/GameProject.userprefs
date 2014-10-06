@@ -2,15 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\ktadano\program\intern_game\GameProject\Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs">
     <Files>
-      <File FileName="Assets\Scripts\Control\Goal.cs" Line="26" Column="60" />
-      <File FileName="Assets\Scripts\Control\PlayerControl.cs" Line="13" Column="1" />
-      <File FileName="Assets\Scripts\Control\FieldControl.cs" Line="13" Column="24" />
-      <File FileName="Assets\Scripts\Control\CommonButton.cs" Line="15" Column="1" />
-      <File FileName="Assets\Scripts\Control\CameraControl.cs" Line="49" Column="1" />
-      <File FileName="Assets\Scripts\GameScene.cs" Line="14" Column="1" />
-      <File FileName="Assets\Scripts\ResultScene.cs" Line="35" Column="34" />
-      <File FileName="Assets\Scripts\TitleScene.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Control\Common\Constant.cs" Line="10" Column="44" />
+      <File FileName="Assets\Scripts\Control\JumpFloorEventDispacher.cs" Line="5" Column="37" />
+      <File FileName="Assets\Scripts\GameScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Control\JumpFloor.cs" Line="7" Column="21" />
+      <File FileName="Assets\Scripts\Control\FieldControl.cs" Line="71" Column="3" />
+      <File FileName="Assets\Scripts\Control\CommonButton.cs" Line="9" Column="24" />
+      <File FileName="c:\Users\ktadano\program\intern_game\GameProject\Assets\Scripts\Control\PlayerControl.cs" Line="75" Column="26" />
       <File FileName="c:\Users\ktadano\program\intern_game\GameProject\Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" Line="1039" Column="59" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -8,6 +8,7 @@ public class CommonButton : UIButton
 	// PrivateMember
 	//====================
 	public event Action OnClick = null;
+	public event Action<bool> OnHold = null;
 
 	//====================
 	// SerializeFieldMember
@@ -24,7 +25,12 @@ public class CommonButton : UIButton
 			{
 				OnClick();
 			}
+			if(OnHold != null)
+			{
+				OnHold(isPressed);
+			}
 		}
+	
 	}
 
 }
