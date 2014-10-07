@@ -7,7 +7,7 @@ public class Constant
 	// PlayerParmeter
 	//====================
 	// MigrationVelocity
-	public const float RateCoefficient = 0.1f;
+	public const float RateCoefficient = 0.2f;
 	public const float Accelerate = 0.3f;
 
 	//====================
@@ -20,9 +20,10 @@ public class Constant
 	// CameraParmeter
 	//====================
 	// PositionCoefficient
-	public const float PositionCoefficientY = 4.0f;
-	public const float PositionCoefficientZ = 14.0f;
-	public const float PositionCoefficientCenterY = 2.0f;
+	public const float PositionCoefficientX = 11.0f;
+	public const float PositionCoefficientY = 6.0f;
+	public const float PositionCoefficientZ = 0.0f;
+	public const float PositionCoefficientCenterY = 4.0f;
 
 	//====================
 	// TouchParmeter

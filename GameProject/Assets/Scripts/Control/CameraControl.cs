@@ -29,6 +29,7 @@ public class CameraControl : MonoBehaviour
 	{
 		// Cameraの視点初期位置を設定
 		this.transform.position = Player.Position
+								+ (Vector3.left * Constant.PositionCoefficientX)
 								+ (Vector3.up * Constant.PositionCoefficientY)
 								+ (Vector3.back * Constant.PositionCoefficientZ);
 
@@ -41,6 +42,7 @@ public class CameraControl : MonoBehaviour
 	{
 		// Playerに追従してゆく
 		this.transform.position =  Player.Position
+								+ (Vector3.left * Constant.PositionCoefficientX)
 								+ (Vector3.up * Constant.PositionCoefficientY)
 								+ (Vector3.back * Constant.PositionCoefficientZ);
 		// Cameraの注視点初期位置を設定

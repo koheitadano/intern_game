@@ -7,6 +7,6 @@ public class GameScene : MonoBehaviour
 	void OnCollisionEnter()
 	{
 		Debug.Log ("GameOver");
-		Application.LoadLevel("result");
+		Application.LoadLevel("gameover");
 	}
 }
