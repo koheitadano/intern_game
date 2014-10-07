@@ -14,5 +14,4 @@ public class Goal : MonoBehaviour
 			OnEnter();
 		}
 	}
-//		Application.LoadLevel("result");
 }

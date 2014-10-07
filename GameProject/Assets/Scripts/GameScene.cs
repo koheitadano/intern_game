@@ -9,5 +9,4 @@ public class GameScene : MonoBehaviour
 		Debug.Log ("GameOver");
 		Application.LoadLevel("result");
 	}
-
 }

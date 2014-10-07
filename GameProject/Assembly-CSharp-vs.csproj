@@ -169,6 +169,7 @@
      <Compile Include="Assets\Scripts\Control\CommonButton.cs" />
      <Compile Include="Assets\Scripts\Control\FieldControl.cs" />
      <Compile Include="Assets\Scripts\Control\Goal.cs" />
+     <Compile Include="Assets\Scripts\Control\GuiControl.cs" />
      <Compile Include="Assets\Scripts\Control\JumpFloor.cs" />
      <Compile Include="Assets\Scripts\Control\JumpFloorEventDispacher.cs" />
      <Compile Include="Assets\Scripts\Control\PlayerControl.cs" />

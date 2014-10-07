@@ -21,7 +21,7 @@ public class Constant
 	//====================
 	// PositionCoefficient
 	public const float PositionCoefficientY = 4.0f;
-	public const float PositionCoefficientZ = 10.0f;
+	public const float PositionCoefficientZ = 14.0f;
 	public const float PositionCoefficientCenterY = 2.0f;
 
 	//====================
