@@ -7,7 +7,7 @@ public class PlayerControl : MonoBehaviour
 {
 	private Vector3 _playerVelocity = Vector3.zero;
 	private Vector3 _playerPosition = Vector3.zero;
-	private float _jumpPower = 6.0f;
+	private float _jumpPower = 7.0f;
 
 	private Animator _animator;
 	private Rigidbody _rigidBody;
@@ -17,6 +17,8 @@ public class PlayerControl : MonoBehaviour
 
 	[SerializeField]
 	JumpFloorEventDispacher JumpFloorEventDispacher = null;
+	[SerializeField]
+	Goal OnEnterGoal = null;
 	[SerializeField]
 	CommonButton AccelerateButton = null;
 
@@ -28,6 +30,7 @@ public class PlayerControl : MonoBehaviour
 
 		AccelerateButton.OnHold += OnAccelerateButtonHold;
 		JumpFloorEventDispacher.OnJump += OnJump;
+		OnEnterGoal.OnEnter += OnEnterGoalToResultTransition;
 
 		// 移動量 * 移動係数
 		_playerVelocity = Vector3.right * Constant.RateCoefficient;
@@ -37,21 +40,12 @@ public class PlayerControl : MonoBehaviour
 	
 	void Update ()
 	{
-
-
-
-		// ｘ軸に対して +方向へ常に移動してゆく
 		this.transform.position += _playerVelocity;
-		// 現在の座標の保存
 		_playerPosition = this.transform.position;
-
 	}
 
 	void OnJump()
 	{
-		// ジャンプ床に触れたときにジャンプアニメーションへ
-		Debug.Log ("GetHitJumpFloor == true ");
-		//ステート遷移中でなかったらジャンプできる
 		if (!_animator.IsInTransition (0))
 		{
 			_rigidBody.AddForce ((Vector3.up + Vector3.right) * _jumpPower, ForceMode.VelocityChange);
@@ -78,10 +72,12 @@ public class PlayerControl : MonoBehaviour
 		}
 	}
 
-	//====================
-	// Property
-	//====================
-	// 現在の座標を取得する
+	void OnEnterGoalToResultTransition()
+	{
+		Application.LoadLevel("result");
+	}
+
+
 	public Vector3 Position
 	{
 		set{this.transform.position = value;}
