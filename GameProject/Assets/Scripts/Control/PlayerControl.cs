@@ -2,46 +2,30 @@
 using System.Collections;
 
 
-//----------------------------------------
-// PlayerControl
-// プレイヤーの制御を記述
-//----------------------------------------
 [RequireComponent(typeof(Animator))]
 public class PlayerControl : MonoBehaviour
 {
-	//====================
-	// PrivateMember
-	//====================
-	// プレイヤーの移動速度を取得する変数
 	private Vector3 _playerVelocity = Vector3.zero;
-	// プレイヤーの現在の座標を保存する
 	private Vector3 _playerPosition = Vector3.zero;
+	private float _jumpPower = 7.0f;
 
-	// ジャンプ力
-	private float _jumpPower = 5.0f;
+	private Animator _animator;
 	private Rigidbody _rigidBody;
 
-	// アニメーションパラメータ
-	private Animator _animator;
 	private int _doJumpId;
 
-	//====================
-	// SerializeFieldMember
-	//====================
+
 	[SerializeField]
 	JumpFloorEventDispacher JumpFloorEventDispacher = null;
 	[SerializeField]
 	CommonButton AccelerateButton = null;
 
-	//====================
-	// Method
-	//====================
-	// Use this for initialization
 	void Start ()
 	{
+		_rigidBody = GetComponent<Rigidbody> ();
 		_animator = GetComponent<Animator> ();
 		_doJumpId = Animator.StringToHash ("DoJump");
-		_rigidBody = GetComponent<Rigidbody> ();
+
 		AccelerateButton.OnHold += OnAccelerateButtonHold;
 		JumpFloorEventDispacher.OnJump += OnJump;
 
@@ -51,7 +35,6 @@ public class PlayerControl : MonoBehaviour
 
 	}
 	
-	// Update is called once per frame
 	void Update ()
 	{
 
@@ -73,9 +56,7 @@ public class PlayerControl : MonoBehaviour
 		{
 			_rigidBody.AddForce ((Vector3.up + Vector3.right) * _jumpPower, ForceMode.VelocityChange);
 			_animator.Play("DoJump");
-//			_animator.SetBool (_doJumpId, true);
 		}
-//		_animator.SetBool (_doJumpId, false);
 	}
 
 
