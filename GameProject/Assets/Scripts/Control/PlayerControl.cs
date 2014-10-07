@@ -7,7 +7,7 @@ public class PlayerControl : MonoBehaviour
 {
 	private Vector3 _playerVelocity = Vector3.zero;
 	private Vector3 _playerPosition = Vector3.zero;
-	private float _jumpPower = 7.0f;
+	private float _jumpPower = 6.0f;
 
 	private Animator _animator;
 	private Rigidbody _rigidBody;
