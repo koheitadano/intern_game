@@ -7,6 +7,6 @@ public class GuiControl : MonoBehaviour
 {
 	void Start()
 	{
-		guiText.text = PlayerPrefs.GetString("minites")+":"+PlayerPrefs.GetString("second")+":"+PlayerPrefs.GetString("frame");
+		guiText.text = "ClearTime ◆"+PlayerPrefs.GetString("minites")+":"+PlayerPrefs.GetString("second")+":"+PlayerPrefs.GetString("frame")+"◆";
 	}
 }

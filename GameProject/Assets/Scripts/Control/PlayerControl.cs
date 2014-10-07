@@ -62,7 +62,7 @@ public class PlayerControl : MonoBehaviour
 		{
 			Debug.Log ("Accel == true ");
 			_playerVelocity = Vector3.right * Constant.Accelerate;
-			_animator.speed = 1.8f;
+			_animator.speed = 1.6f;
 		}
 		else
 		{
